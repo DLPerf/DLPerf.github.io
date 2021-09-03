@@ -19,7 +19,7 @@ add figure 5 and figure 6
 
 
 ## Benchmark and Asessment
-We reproduce and build a benchmark of 56 PBs from the 238 PBs in our empirical study with four person-months effort, which can be used to facilitate the future research on PBs in DL systems. We also assess the capability of existing approaches in addressing them.
+We reproduce and build a benchmark of **56** PBs from the **238** PBs in our empirical study with four person-months effort, which can be used to facilitate the future research on PBs in DL systems. We also assess the capability of existing approaches in addressing them.
 
 **The procudure to reproduce benchmark is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/benchmark)**
 ## Detection
