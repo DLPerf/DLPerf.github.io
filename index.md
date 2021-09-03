@@ -7,13 +7,13 @@ We present the first comprehensive study to characterize PBs in DL systems devel
 - RQ2 Root Cause: what are the root causes of PBs?
 - RQ3 Stage: what are the stages of introducing and exposing PBs?
   
-**Empirical study data is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/empirical_study)**
+**Empirical study data is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/empirical_study)**.
 
 
-## Benchmark and Asessment
+## Benchmark and Assessment
 We reproduce and build a benchmark of **56** PBs from the **238** PBs in our empirical study with four person-months effort, which can be used to facilitate the future research on PBs in DL systems. We also assess the capability of existing approaches in addressing them.
 
-**The procudure to reproduce benchmark is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/benchmark)**
+**The procudure to reproduce benchmark is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/benchmark)**.
 ## Detection
 To demonstrate the usefulness of our findings, we implement a rule-based static checker, named *DeepPerf*, to detect PBs in DL systems. *DeepPerf* is implemented with two static analysis tools, [AST](https://docs.python.org/3/library/ast.html) and [Jedi](https://github.com/davidhalter/jedi/). It currently supports three types of PBs whose detection~rules are manually derived from our empirical study. 
 
