@@ -10,8 +10,8 @@ The assessment of three performance analysis techniques are listed in "profiler_
 
 ## Steps to Reproduce the Benchmark
 ### Download Benchmark Data
-Download the benchmark [here](www) and unzip it.
-PBs requiring different Tensorflow versions are in different folders.
+Download the benchmark and data [here](https://github.com/DLPerf/DLPerf.github.io/tree/main/benchmark/download) and unzip them.
+PBs requiring different Tensorflow versions are in different folders. 
 
 ### Install Tensorflow Docker
 1. Install NVIDIA docker driver and Docker Engine on the host machine, [link](https://github.com/NVIDIA/nvidia-docker/wiki/Frequently-Asked-Questions#how-do-i-install-the-nvidia-driver).
@@ -27,7 +27,7 @@ PBs requiring different Tensorflow versions are in different folders.
    - tensorflow/tensorflow:1.12.3-gpu-py3
 
 
-### Run the benchmark
+### Reproduce the benchmark
 In the docker container, enter a PB directory with `cd /tf/mydata/[tf_version]/[PB_dir]`. There are `README`, `buggy.py`, `fixed.py` in each PB directory, `profile/` or `tf_xla.py` if it is applied for Tensorflow Profiler or XLA.
 There may be multiple pairs of buggy file and fixed file if there are multiple PBs extracted from the same post, or multiple variants of the same PB.
 The environment configuration, performance change after fixing, and reproduction steps are recorded in the `README`.
@@ -37,3 +37,17 @@ Follow the next steps to run PBs and assess them with TensorFlow Profiler or XLA
 2. Run `python buggy.py` or `python fixed.py` to reproduce symptoms of buggy and fixed version. 
 3. If there exists `profile/`, run  `cd ./profile`,  `python buggy_profile.py`, `python fixed_profile.py` to generating profiling data. To visualize the profiling data, you should install TensorBoard with `pip install tensorboard`, and then run `tensorboard --logdir=logs/ --port=6006 --load_fast=false --bind_all`.
 4. If there exists `tf_xla.py`, run  `python tf_xla.py` to reproduce the results of XLA.
+
+PB root causes abbreviate in names of `PB_dir`:
+- Not Using Efficient API: API_NUE
+- Not Using Batch API: API_NUB
+- Ineffient API Usage: API_IAU
+- Confusion with Computation Graph: Model_CCG
+- Inefficient Model Structure: Model_IMS
+- Improper Model Parameter: Model_IMP
+- Improper Hyper Parameter: Model_IHP
+- Library Bug: Library_LB
+- Inefficient Data Transmission: Data_IDT
+- Inefficient Data Preprocessing: Data_IDP
+- Improper Data Inputs: Data_IDI
+
