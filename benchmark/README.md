@@ -10,7 +10,9 @@ The assessment of three performance analysis techniques are listed in "profiler_
 
 ## Steps to Reproduce the Benchmark
 ### Download Benchmark Data
-Download the benchmark and data [here](https://github.com/DLPerf/DLPerf.github.io/tree/main/benchmark/download) and unzip them with `tar -xvf benchmark.tar` and `tar -xvf benchmark_data.tar`.
+Install git lfs following the [instruction](https://git-lfs.github.com/) and clone this repo to get the benchmark and data [here](https://github.com/DLPerf/DLPerf.github.io/tree/main/benchmark/download).
+Unzip them with `tar -xvf benchmark.tar` and `tar -xvf benchmark_data.tar`.
+
 PBs requiring different Tensorflow versions are in different folders. 
 
 ### Install Tensorflow Docker
