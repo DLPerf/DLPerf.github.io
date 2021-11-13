@@ -3,7 +3,7 @@
 # 2. Words in posts should be stemmed with nltk.stem.PorterStemmer firstly, and then matched with the keywords set. 
 
 # Difference between this keywords set and those used in previous empirical studies about performance bugs[1][2]:
-# 1. This keywords set contains 2-gram keywords, which were initially derived from 2-grams that with a high TF-IDF value from preliminary tagged PB related posts, and then verified manually.
+# 1. This keywords set contains 2-gram keywords, which were derived to imrpove the matching accuracy.
 # 2. There are some deep learning specific keywords, such as "gpu util" and "gpu ram".
 
 # Reference:
