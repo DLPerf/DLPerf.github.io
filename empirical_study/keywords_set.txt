@@ -1,1 +1,28 @@
+# Note: 
+# 1. The keywords set contains 11 1-gram and 13 2-gram keywords. Every post that contain at least one of them will be considered a potential PB post, and should be manually checked later.
+# 2. Posts were fisrt stemmed with nltk.stem.PorterStemmer, and then matched with the keywords set. 
 
+hangs
+slowli
+slower
+slowest
+faster
+fastest
+speed
+oom
+throughput
+effici
+overhead
+gpu util
+extrem slow
+take longer
+run slow
+very slow
+cpu ram
+gpu ram
+memori leak
+cpu time
+per second
+slowi tri
+take long
+perform issu
