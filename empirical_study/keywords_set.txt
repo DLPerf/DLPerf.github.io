@@ -1,6 +1,15 @@
 # Note: 
 # 1. The keywords set contains 11 1-gram and 13 2-gram keywords. Every post that contain at least one of them will be considered a potential PB post, and should be manually checked later.
-# 2. Posts were fisrt stemmed with nltk.stem.PorterStemmer, and then matched with the keywords set. 
+# 2. Words in posts should be stemmed with nltk.stem.PorterStemmer firstly, and then matched with the keywords set. 
+
+# Difference between this keywords set and those used in previous empirical studies about performance bugs[1][2]:
+# 1. This keywords set contains 2-gram keywords, which were initially derived from 2-grams that with a high TF-IDF value from preliminary tagged PB related posts, and then verified manually.
+# 2. There are some deep learning specific keywords, such as "gpu util" and "gpu ram".
+
+# Reference:
+#[1]Guoliang Jin, Linhai Song, Xiaoming Shi, Joel Scherpelz, and Shan Lu. 2012. Understanding and Detecting Real-World Performance Bugs. In Proceedings of the 33rd ACM SIGPLAN Conference on Programming Language Design and Implementation. 77–88.
+#[2]Shahed Zaman, Bram Adams, and Ahmed E Hassan. 2012. A qualitative study on performance bugs. In Proceedings of the 9th IEEE working conference on mining software repositories. 199–208.
+
 
 hangs
 slowli
