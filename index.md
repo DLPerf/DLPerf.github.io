@@ -7,18 +7,18 @@ We present the first comprehensive study to characterize PPs in DL systems devel
 - RQ1 Symptom: what are the symptoms of PPs?
 - RQ2 Root Cause: what are the root causes of PPs?
 - RQ3 Stage: what are the stages of introducing and exposing PPs?
-- RQ4 Assessment:how is the capability of existing performance analysis approaches in tackling PPs?
+- RQ4 Assessment: how is the capability of existing performance analysis approaches in tackling PPs?
   
-All **empirical study data** is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/empirical_study).
+All 224 PPs with labelled symptoms, root causes and stages is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/empirical_study/empirical_study.csv).
 
-### Keywords Set
-Following the procedure presented in the paper, we derived a keyword set that contains 11 1-gram and 13 2-gram keywords to obtain candidate PP posts. Every post that contains at least one of them will be considered a potential PP post, and should be manually checked later. Words in posts should be stemmed with nltk.stem.PorterStemmer firstly, and then matched with the keywords set. 
+### Keyword Set
+Following the procedure presented in the paper, we derived a keyword set that contains 11 1-gram and 13 2-gram keywords to obtain candidate PP posts. Every post that contains at least one of them will be considered a potential PP post, and should be manually checked later. Words in posts should be stemmed with nltk.stem.PorterStemmer firstly, and then matched with the keyword set. 
 
-Difference between this keywords set and those used in previous empirical studies about performance problems:
-1. This keywords set contains 2-gram keywords, which were derived to imrpove the matching accuracy.
+Difference between this keyword set and those used in previous empirical studies on performance problems in traditional software systems:
+1. This keyword set contains 2-gram keywords, which were derived to imrpove the matching accuracy.
 2. There are some deep learning specific keywords, such as "gpu util" and "gpu ram".
 
-The **full keywords list**: hangs, slowli, slower, slowest, faster, fastest, speed, oom, throughput, effici, overhead, gpu util, extrem slow, take longer, run, slow, very slow, cpu ram, gpu ram, memori leak, cpu time, per second, slowi tri, take long, perform issu.
+The **full keyword list**: hangs, slowli, slower, slowest, faster, fastest, speed, oom, throughput, effici, overhead, gpu util, extrem slow, take longer, run, slow, very slow, cpu ram, gpu ram, memori leak, cpu time, per second, slowi tri, take long, perform issu.
 
 ### Codebook
 The actionable code of the final taxonomies for symptoms, root causes and stages is presented below. A more readable excel version is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/empirical_study/codebook.xlsx).
@@ -72,7 +72,7 @@ The actionable code of the final taxonomies for symptoms, root causes and stages
 8. **Prediction:** The stage where the model is deployed and used to predict the real world data.
 9. **Unkown:** The stage could not be inferred directly from the post due to the incomplete code snippets.
 
-#### Disambiguation guide
+#### Disambiguation Guide
 We provide further disambiguation guide for codes that may be misclassified with each other, such as Inefficient API Usage and Not Using Efficient API, Confusion with Computation Graph and Inefficient Model Structure, etc. It is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/empirical_study/disambiguation_guide.xlsx).
 
 ### Benchmark and Approach Assessment
@@ -82,10 +82,6 @@ We reproduce and build a benchmark of **58** PPs from the **224** PPs in our emp
 **The procudure to reproduce benchmark and assess existing approaches is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/benchmark)**.
 
 ## Application
-To demonstrate the usefulness of our findings, we implement a rule-based static checker, named *DeepPerf*, to detect PPs in DL systems. *DeepPerf* is implemented with two static analysis tools, [AST](https://docs.python.org/3/library/ast.html) and [Jedi](https://github.com/davidhalter/jedi/). It currently supports three types of PPs whose detection~rules are manually derived from our empirical study. 
+To demonstrate the usefulness of our findings, we implement a rule-based static checker, named *DeepPerf*, to detect PPs in DL systems. *DeepPerf*  is implemented with two static analysis tools, [AST](https://docs.python.org/3/library/ast.html) and [Jedi](https://github.com/davidhalter/jedi/). It currently supports three types of PPs whose detection rules are manually derived from our empirical study. 
 
-**The code is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/tool).**
-
-## Reference
-\[1] Guoliang Jin, Linhai Song, Xiaoming Shi, Joel Scherpelz, and Shan Lu. 2012. Understanding and Detecting Real-World Performance Bugs. In Proceedings of the 33rd ACM SIGPLAN Conference on Programming Language Design and Implementation. 77–88.
-\[2] Shahed Zaman, Bram Adams, and Ahmed E Hassan. 2012. A qualitative study on performance bugs. In Proceedings of the 9th IEEE working conference on mining software repositories. 199–208.
+**The source code of *DeepPerf* is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/tool).**
