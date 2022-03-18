@@ -21,7 +21,7 @@ Difference between this keywords set and those used in previous empirical studie
 The **full keywords list**: hangs, slowli, slower, slowest, faster, fastest, speed, oom, throughput, effici, overhead, gpu util, extrem slow, take longer, run, slow, very slow, cpu ram, gpu ram, memori leak, cpu time, per second, slowi tri, take long, perform issu.
 
 ### Codebook
-The actionable code of the final taxonomies for symptoms, root causes and stages is presented below.
+The actionable code of the final taxonomies for symptoms, root causes and stages is presented below. A more readable excel version is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/empirical_study/codebook.xlsx).
 
 #### Code for Symptoms
 1. **Time:** The buggy code version exhibits high time cost, and the fixed code version imrpoves the time cost. 
@@ -73,7 +73,7 @@ The actionable code of the final taxonomies for symptoms, root causes and stages
 9. **Unkown:** The stage could not be inferred directly from the post due to the incomplete code snippets.
 
 #### Disambiguation guide
-We provide further disambiguation guide for codes that may be misclassified with each other, such as Inefficient API Usage and Not Using Efficient API, Confusion with Computation Graph and Inefficient Model Structure, etc. It is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/empirical_study).
+We provide further disambiguation guide for codes that may be misclassified with each other, such as Inefficient API Usage and Not Using Efficient API, Confusion with Computation Graph and Inefficient Model Structure, etc. It is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/empirical_study/disambiguation_guide.xlsx).
 
 ### Benchmark
 
