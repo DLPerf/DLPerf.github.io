@@ -30,8 +30,8 @@ PPs requiring different Tensorflow versions are in different folders.
 
 
 ### Reproduce the benchmark
-In the docker container, enter a PP directory with `cd /tf/mydata/[tf_version]/[PP_dir]`. There are `README`, `buggy.py`, `fixed.py` in each PB directory, `profile/` or `tf_xla.py` if it is applied for Tensorflow Profiler or XLA.
-There may be multiple pairs of buggy file and fixed file if there are multiple PPs extracted from the same post, or multiple variants of the same PB.
+In the docker container, enter a PP directory with `cd /tf/mydata/[tf_version]/[PP_dir]`. There are `README`, `buggy.py`, `fixed.py` in each PP directory, `profile/` or `tf_xla.py` if it is applied for Tensorflow Profiler or XLA.
+There may be multiple pairs of buggy file and fixed file if there are multiple PPs extracted from the same post, or multiple variants of the same PP.
 The environment configuration, performance change after fixing, and reproduction steps are recorded in the `README`.
 
 Follow the next steps to run PPs and assess them with TensorFlow Profiler or XLA:
