@@ -75,11 +75,11 @@ The actionable code of the final taxonomies for symptoms, root causes and stages
 #### Disambiguation guide
 We provide further disambiguation guide for codes that may be misclassified with each other, such as Inefficient API Usage and Not Using Efficient API, Confusion with Computation Graph and Inefficient Model Structure, etc. It is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/empirical_study/disambiguation_guide.xlsx).
 
-### Benchmark
+### Benchmark and Approach Assessment
 
-We reproduce and build a benchmark of **58** PPs from the **224** PPs in our empirical study with four person-months effort, which can be used to facilitate the future research on PPs in DL systems. We also assess the capability of existing approaches in addressing them.
+We reproduce and build a benchmark of **58** PPs from the **224** PPs in our empirical study with four person-months effort, which can be used to facilitate the future research on PPs in DL systems. We also assess the capability of existing performance analysis approaches in addressing them.
 
-**The procudure to reproduce benchmark is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/benchmark)**.
+**The procudure to reproduce benchmark and assess existing approaches is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/benchmark)**.
 
 ## Application
 To demonstrate the usefulness of our findings, we implement a rule-based static checker, named *DeepPerf*, to detect PPs in DL systems. *DeepPerf* is implemented with two static analysis tools, [AST](https://docs.python.org/3/library/ast.html) and [Jedi](https://github.com/davidhalter/jedi/). It currently supports three types of PPs whose detection~rules are manually derived from our empirical study. 
