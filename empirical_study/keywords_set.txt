@@ -1,5 +1,5 @@
 # Note: 
-# 1. The keywords set contains 11 1-gram and 13 2-gram keywords. Every post that contain at least one of them will be considered a potential PB post, and should be manually checked later.
+# 1. The keywords set contains 11 1-gram and 13 2-gram keywords. Every post that contain at least one of them will be considered a potential PP post, and should be manually checked later.
 # 2. Words in posts should be stemmed with nltk.stem.PorterStemmer firstly, and then matched with the keywords set. 
 
 # Difference between this keywords set and those used in previous empirical studies about performance bugs[1][2]:
