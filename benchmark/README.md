@@ -10,8 +10,8 @@ The assessment of three performance analysis techniques are listed in "profiler_
 
 ## Steps to Reproduce the Benchmark
 ### Download Benchmark Data
-Install git lfs following the [instruction](https://git-lfs.github.com/) and clone this repo to get the benchmark and data [here](https://github.com/DLPerf/DLPerf.github.io/tree/main/benchmark/download).
-Concat the splitted tars with `cat benchmark.tar* > test1.tar.gz` and `cat benchmark_data* > test2.tar.gz`. Unzip them with `tar -xvf test1.tar.gz` and `tar -xvf test2.tar.gz`.
+Download the benchmark and data [here](https://www.kaggle.com/datasets/junmingcao/dlperf).
+Concat the splitted tars with `cat benchmark_data* > benchmark_data.tar`. Unzip them with `tar -xvf benchmark_data.tar` and `tar -xvf benchmark.tar.gzaa`.
 
 PPs requiring different Tensorflow versions are in different folders. 
 
