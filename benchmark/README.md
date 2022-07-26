@@ -19,13 +19,10 @@ PPs requiring different Tensorflow versions are in different folders.
 1. Install NVIDIA docker driver and Docker Engine on the host machine, [link](https://github.com/NVIDIA/nvidia-docker/wiki/Frequently-Asked-Questions#how-do-i-install-the-nvidia-driver).
 2. Install Tensorflow docker images with the command `docker run --gpus all -v [benchmark_path]:/tf/mydata -it --privileged=true tensorflow/tensorflow:[tf_docker_version]`. We use the following TensorFlow images:
    - tensorflow/tensorflow:2.5.0-gpu-jupyter
-   - tensorflow/tensorflow:2.4.3-gpu-jupyter
-   - tensorflow/tensorflow:2.3.2-gpu-jupyter
    - tensorflow/tensorflow:2.2.3-gpu-jupyter
    - tensorflow/tensorflow:2.0.0-gpu-py3-jupyter
    - tensorflow/tensorflow:1.15.5-gpu-jupyter
    - tensorflow/tensorflow:1.14.0-gpu-py3-jupyter
-   - tensorflow/tensorflow:1.13.1-gpu-jupyter
    - tensorflow/tensorflow:1.12.3-gpu-py3
 
 
