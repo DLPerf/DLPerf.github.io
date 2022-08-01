@@ -34,7 +34,7 @@ The environment configuration, performance change after fixing, and reproduction
 Follow the next steps to run PPs and assess them with TensorFlow Profiler or XLA:
 1. Check the environment requirements in the `README`, install them with `pip install`.
 2. Run `python buggy.py` or `python fixed.py` to reproduce symptoms of buggy and fixed version. 
-3. If there exists `profile/`, run  `cd ./profile`,  `python buggy_profile.py`, `python fixed_profile.py` to generating profiling data. To visualize the profiling data, you should install TensorBoard with `pip install tensorboard`, and then run `tensorboard --logdir=logs/ --port=6006 --load_fast=false --bind_all`.Different hardware may cause different results.
+3. If there exists `profile/`, run  `cd ./profile`,  `python buggy_profile.py`, `python fixed_profile.py` to generating profiling data. To visualize the profiling data, you should install TensorBoard with `pip install tensorboard`, and then run `tensorboard --logdir=logs/ --port=6006 --load_fast=false --bind_all`. Different hardware may cause different results.
 4. If there exists `tf_xla.py`, run  `python tf_xla.py` to reproduce the results of XLA.
 
 PP root causes abbreviate in names of `PP_dir`:
