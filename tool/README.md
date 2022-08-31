@@ -1,4 +1,8 @@
 ## DeepPerf
+
+We implement a rule-based static checker, named DeepPerf, to detect PPs in DL systems. DeepPerf is implemented with two static analysis tools, AST and Jedi. It currently supports three types of PPs whose detection rules are manually derived from our empirical study.
+
+
 ### Requirements
 - Python >= 3.8.0
 - jedi >= 0.18.0
