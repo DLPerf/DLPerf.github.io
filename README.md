@@ -86,3 +86,5 @@ We reproduce and build a benchmark of **58** PPs from the **224** PPs in our emp
 To demonstrate the usefulness of our findings, we implement a rule-based static checker, named *DeepPerf*, to detect PPs in DL systems. *DeepPerf*  is implemented with two static analysis tools, [AST](https://docs.python.org/3/library/ast.html) and [Jedi](https://github.com/davidhalter/jedi/). It currently supports three types of PPs whose detection rules are manually derived from our empirical study. 
 
 **The source code of *DeepPerf* is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/tool).**
+
+The list of fixed performance problems is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/tool/fixed_performance_problems.xlsx).
