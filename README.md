@@ -90,7 +90,7 @@ To demonstrate the usefulness of our findings, we implement a rule-based static 
 The list of fixed performance problems is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/tool/fixed_performance_problems.xlsx).
 
 ## Reference
-This project is mainly developed by Junming Cao (https://jamescao2048.github.io/), a Ph.D student in Fudan University, supervised by Prof. Bihuan Chen and Xin Peng. 
+This project is mainly developed by Junming Cao (https://jamescao2048.github.io/), a Ph.D student in Fudan University, supervised by Prof. Bihuan Chen and Prof. Xin Peng. 
 
 Please cite 
 ```
