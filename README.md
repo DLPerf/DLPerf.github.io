@@ -88,3 +88,16 @@ To demonstrate the usefulness of our findings, we implement a rule-based static 
 **The source code of *DeepPerf* is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/tool).**
 
 The list of fixed performance problems is available [here](https://github.com/DLPerf/DLPerf.github.io/blob/main/tool/fixed_performance_problems.xlsx).
+
+## Reference
+This project is mainly developed by Junming Cao (https://jamescao2048.github.io/), who is a Ph.D student in Fudan University, supervised by Prof. Bihuan Chen and Xin Peng. 
+Please cite `
+@inproceedings{cao2022Understanding,
+  title={Understanding Performance Problems in Deep Learning Systems},
+  author={Junming Cao, Bihuan Chen, Chao Sun, Longjie Hu, Shuaihong Wu, Xin Peng},
+  journal={Proceedings of the 30th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+  year={2022},
+  doi={https://doi.org/10.1145/3540250.3549123},
+}
+` for reference.
+For any questions and feedbacks, you can send email to junmingcao@foxmail.com.
