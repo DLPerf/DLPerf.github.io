@@ -92,7 +92,8 @@ The list of fixed performance problems is available [here](https://github.com/DL
 ## Reference
 This project is mainly developed by Junming Cao (https://jamescao2048.github.io/), who is a Ph.D student in Fudan University, supervised by Prof. Bihuan Chen and Xin Peng. 
 
-Please cite ```
+Please cite 
+```
 @inproceedings{cao2022Understanding,
   title={Understanding Performance Problems in Deep Learning Systems},
   author={Junming Cao, Bihuan Chen, Chao Sun, Longjie Hu, Shuaihong Wu, Xin Peng},
@@ -100,6 +101,7 @@ Please cite ```
   year={2022},
   doi={https://doi.org/10.1145/3540250.3549123},
 }
-``` for reference.
+```
+for reference.
 
 For any questions and feedbacks, you can send email to junmingcao@foxmail.com.
